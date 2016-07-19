@@ -21,4 +21,64 @@
         = image_tag('mezz_1.jpg', height:'400', width:'100%', class:'img-fluid')
 
     .row#event_form
-      -# = form_for
+      -# = render '/pages/_form-event'
+      %h2 Events Inquiry
+      .row
+        %col-md-6
+          %fieldset.form-group
+            %label{:for => "formGroupExampleInput"} First Name
+            %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}
+        %col-md-6
+          %fieldset.form-group
+            %label{:for => "formGroupExampleInput2"} Last Name
+            %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
+      %fieldset.form-group
+        %label{:for => "formGroupExampleInput"} Email
+        %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}
+      %fieldset.form-group
+        %label{:for => "formGroupExampleInput2"} Phone Number
+        %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
+
+      %fieldset.form-group
+        %label{:for => "exampleSelect1"} Space Interested In:
+        %select#exampleSelect1.form-control
+          %option Lounge
+          %option Mezzanine
+          %option Community Table
+          %option Dining Room
+          %option Restaurant Buyout
+      %fieldset.form-group
+        %label{:for => "formGroupExampleInput2"} Number of Guests
+        %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
+      %fieldset.form-group
+        %label{:for => "formGroupExampleInput"} Date
+        %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}
+      %fieldset.form-group
+        %label{:for => "formGroupExampleInput2"} Time
+        %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
+      %fieldset.form-group
+        %label{:for => "exampleSelect1"} Type of Event
+        %select#exampleSelect1.form-control
+          %option Wedding Engagement
+          %option Rehersal Dinner
+          %option Shower
+          %option Birthday
+          %option Graduation
+          %option Alumni
+          %option Cocktail Reception
+          %option Corporate Event
+          %option Fundraiser
+          %option Private Dinner
+          %option Other
+      %fieldset.form-group
+        %label{:for => "exampleTextarea"} Additional Information
+        %textarea#exampleTextarea.form-control{:rows => "5"}
+
+
+-# #form_event
+-#   %fieldset.form-group
+-#     %label{:for => "formGroupExampleInput"} Example label
+-#     %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}
+-#   %fieldset.form-group
+-#     %label{:for => "formGroupExampleInput2"} Another label
+-#     %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
