@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+@import "font-awesome-sprockets"
+@import "font-awesome"
+// @import "normalize"
+
+//= require jquery
+//= require bootstrap-sprockets
+
+html, body
+  font-family: 'Lato', sans-serif
+// font-family: 'Raleway', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 600
+
+a
+  text-decoration: none
+  color: inherit
+  font-weight: 400
+
+.header
+  background-color: #000
+  color: #fff
+  display: flex
+  .container
+    .row
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      width: 100%
+      nav.navbar
+        margin-bottom: 0px
+        img
+          padding: 5px 5px
+          height: 150px
+        a
+          font-size: 1.3em
+          margin-top: 15px
+
+.footer
+  // background: #ccc
+  display: flex
+  position: relative
+  bottom: 0
+  width: 100%
+  /* Set the fixed height of the footer here */
+  height: 120px
+  /* Vertically center the text there */
+  // line-height: 60px
+  background-color: #3ab0fb
+  background: #215e7b
+  .row
+    // flex-wrap: wrap
+    #icon_wrapper
+      img
+        margin: 10px 10px
+    #address_wrapper
+      text-align: center
+      color: #fff
+      p
+        font-size: 1.1em
+        color: #fff
+        margin: 0 0
+        padding: 5px 5px
+        // text-align: center
+    #social_wrapper
+      ul
+        i
+          float: right
+          color: #fff
+          margin: 25px  5px

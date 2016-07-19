@@ -1,0 +1,163 @@
+#index_page
+
+  .jumbotron
+    #carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "3000"}
+      / Indicators
+      -# %ol.carousel-indicators
+      -#   %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+      -#   %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+      -#   %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+
+      / Wrapper for slides
+      .carousel-inner
+        .item.active
+          = image_tag('dining.jpg', height:'500', width:'100%', class:'img-fluid')
+          .carousel-caption
+        .item
+          = image_tag('steak-frites.jpg', height:'500', width:'100%', class:'img-fluid')
+          .carousel-caption
+        .item
+          = image_tag('wine_glass.jpg', height:'500', width:'100%', class:'img-fluid')
+          .carousel-caption
+        .item
+          = image_tag('Beer-Flight.jpeg', height:'500', width:'100%', class:'img-fluid')
+          .carousel-caption
+        .item
+          = image_tag('beer.jpg', height:'500', width:'100%', class:'img-fluid')
+          .carousel-caption
+
+      / Controls
+      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+        %span.glyphicon.glyphicon-chevron-left
+      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+        %span.glyphicon.glyphicon-chevron-right
+    / Carousel
+#hours
+  .container
+    .row
+      %h3 Restaurant Hours
+      .col-md-3
+        %h4 Lunch
+        %p Monday-Friday 11:30am-3pm
+      .col-md-3
+        %h4 Dinner
+        %p Friday and Saturday 5pm-11pm
+        %p Sunday-Thursday 5pm-10pm
+      .col-md-3
+        %h4 Brunch
+        %p Saturday and Sunday 9:30am-3pm
+      .col-md-3
+        %h4 "Happy Hour"
+        %p Seven days a week: 3pm - 7pm
+
+
+#menu
+  .container
+    -# %h1 Menu
+    .row
+      -# %ul
+      -#   %li
+      -#     %button= link_to 'Home', class:'btn btn-default'
+      -#   %li
+      -#     %button= link_to 'Menu', class:'btn btn-default'
+      -#   %li
+      -#     %button= link_to 'About', class:'btn btn-default'
+      -#   %li
+      -#     %button= link_to 'Events', class:'btn btn-default'
+      -#   %li
+      -#     %button= link_to 'Press', class:'btn btn-default'
+
+      // temp testing items
+      .item1.item Item 1
+      .item2.item Item 2
+      .item3.item Item 3
+      .item4.item Item 4
+      .item5.item Item 5
+
+
+
+
+#about
+  .container
+    .row#about
+      %h1 About
+      %h3 The Restaurant:
+      %br/
+      %p Lyon Hall is a bustling brasserie in the Clarendon neighborhood of Arlington, VA. We serve classic French brasserie cuisine, featuring carefully sourced produce, fish, and meats. Our kitchen, overseen by Executive Chef Matt Hill, prepares freshly baked bread, house-cured charcuterie, and handcrafted cheeses on a daily basis.
+      %p
+        Our wine list offers an intriguing array of selections, with an emphasis on small, family-owned French wineries. Also complementing our cuisine perfectly is a diverse menu of some of the world’s most notable beers, including 23 on tap and over 50 in bottle. Finally, our bar specializes in carefully crafted cocktails, both traditional and original, including the house favorite the “SJF”.
+      %p
+        Our dining room, bar, and expansive outdoor patio offer an appealing mix of comfort and ambiance, and Managing Partner Mark Fedorchak and his team strive to create an environment of attentive, sincere hospitality.
+      %p
+        Lyon Hall is part of the restaurant family that includes The Liberty Tavern and Northside Social, also in Clarendon. All three gathering places are careful restorations of historically significant properties, and are consciously designed to preserve the character and charm that is a hallmark of North Arlington. We look forward to welcoming you to one of our establishments, and very much appreciate your patronage.
+
+      %br/
+      %h3 The Wine:
+      %p A bottle of Cabernet Sauvignon capsule with corkscrews and characteristics. Glass of Chardonnay stem on vineyards from the valley quality. Sip quality estate fruit made with grapes grown unique vine. Farmed locations planted sustainabilty winemakers grow harvest before aged to ensure each varietal. Premium selection notable craft wines, collection small lots are elegant and distinctive. Taste labels and notes with flavors of brand. Tasting room visit package design cold-climate whole cluster fermentation in the mountain range. Winemaking facility crush activity Pinot Noir food and wine pairing then producers accolade score. Vintners prefer cool climate popular vinous offerings can ripen  world-famous traditional method for tastings. Appellation of origin brand name and the wine type with a vineyard designation are mandatory. Aromas of pear green region and flavors of toasted oak ripen a hint of dark berries.
+      %br/
+      %h3 The Beer:
+      %p The Pilsner, a Brewers Reserve , and some hops are what made America great! If a blotched Labatts throws a wavy Fosters at an underhandedly annoying line dancer, then the flabby Dos Equis self-flagellates. If the geosynchronous St. Pauli Girl usually pours freezing cold booze on a Jamaica Red Ale, then a cantankerous Hops Alligator Ale beams with joy. The Red Stripe is gratifying. Any girl scout can dance with some chain saw, but it takes a real Left Hand Milk Stout to write a love letter to a pin ball machine around a bar tab.
+    .row#team
+      .col-md-4
+        .card#chef
+          = image_tag 'Adam_2.jpg'
+          .card-block
+            %h4.card-text Adam Barnett
+            %p.card-text Head Chef
+            %p.card-text Catnipsum dolor sit amet pouncing kitty sylvester catnip catnip bengal patch cat got your tounge. I smell a rat mrow miaowmiaow chase balls of string mmmeoww. Cat-eyes oliver let the cat out of the bag there's a kitten on my head shiny coat hairball european shorthair. Fat cat mrow rrrow-mawww bombay shadow. Purr purr purr kitty stuck in a tree miaow. Miioo-oo-oo missy claws kittens hanging from the screens catnipsum. Tiger sassy catnip nose arabian soft fur. Patch mmeww cuddle me european shorthair jumping rolling. Molly catnipsum bowl puss leap feathers. Sassy thai rolly arabian claws.
+      .col-md-4
+        .card#manager
+          = image_tag 'G.jpg'
+          .card-block
+            %h4.card-text Gillian Schroeder
+            %p.card-text General Manger
+            %p.card-text I can't tell where your back ends and your butt begins. I texted back a smiley face. She texted back some letters I don't understand. I've logged over 3,000 fantasy hours on my relationship with Jimmy Jr. You don't just throw that away. Everyone began to touch each other's butts. I had no idea there was so much butt touching in baseball. I thought I saw a baby bump. Ugg, my heart just pooped its pants. My boob? Just when I think I'm out, those cheeks pull me right back in. I'm compiling a list of people I can mate with to repopulate the Earth. Sausage leather belts. Not if you're a fish. Put it on a t-shirt, Jimmy Jr, I don't want to hear it. I'm a smart, strong, sensual woman.
+      .col-md-4
+        .card#partner
+          = image_tag 'mark.jpg'
+          .card-block
+            %h4.card-text Mark Fedorchak
+            %p.card-text Managing Partner
+            %p.card-text Blue castello chalk and cheese feta. Danish fontina everyone loves cheese and biscuits cheddar manchego goat macaroni cheese cow. Caerphilly croque monsieur pecorino queso melted cheese cheese and biscuits cheese and wine say cheese. Bocconcini cheesecake red leicester croque monsieur edam stinking bishop cheesy grin red leicester. Cow stinking bishop croque monsieur cheese on toast gouda who moved my cheese brie ricotta. Cheese and wine say cheese squirty cheese ricotta melted cheese cauliflower cheese.
+
+#events
+  .container
+    %h1 Event Space
+    .row
+      #carousel-example-generic.carousel.slide{"data-ride" => "carousel_2", "data-interval" => "3000"}
+        / Indicators
+        -# %ol.carousel-indicators
+        -#   %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+        -#   %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+        -#   %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+
+        / Wrapper for slides
+        .carousel-inner
+          .item.active
+            = image_tag('dining.jpg', height:'500', width:'100%', class:'img-fluid')
+            .carousel-caption
+          .item
+            = image_tag('steak-frites.jpg', height:'500', width:'100%', class:'img-fluid')
+            .carousel-caption
+          .item
+            = image_tag('wine_glass.jpg', height:'500', width:'100%', class:'img-fluid')
+            .carousel-caption
+          .item
+            = image_tag('Beer-Flight.jpeg', height:'500', width:'100%', class:'img-fluid')
+            .carousel-caption
+          .item
+            = image_tag('beer.jpg', height:'500', width:'100%', class:'img-fluid')
+            .carousel-caption
+
+        / Controls
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+          %span.glyphicon.glyphicon-chevron-left
+        %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+          %span.glyphicon.glyphicon-chevron-right
+      / Carousel
+
+
+:javascript
+$('.carousel').carousel({
+  interval: 3000
+})

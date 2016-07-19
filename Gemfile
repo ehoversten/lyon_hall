@@ -30,6 +30,7 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem "paperclip", "~> 5.0.0"
 gem "cocoon"
 gem 'devise'
+gem 'font-awesome-sass'
 
 
 # Use ActiveModel has_secure_password

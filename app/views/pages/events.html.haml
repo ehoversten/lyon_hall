@@ -1,0 +1,24 @@
+#events_page
+  .container
+    %h1 Private Dining and Events
+    .row#lounge
+      .col-md-4
+        %h3 Lounge
+        %p Our newly-constructed Private Dining Room is the perfect place for intimate celebrations, corporate gatherings, or parties. We offer a seasonal, prix-fixe menu tailored to your preferences. The room accommodates up to 18 seated and is available for lunch and dinner Monday through Friday and brunch and dinner on Saturday and Sunday.
+      .col-md-8
+        = image_tag('front_patio.jpg', height:'400', width:'100%', class:'img-fluid')
+    .row#dining
+      .col-md-8
+        = image_tag('restaurant_dining.jpg', height:'400', width:'100%', class:'img-fluid')
+      .col-md-4
+        %h3 Dining Room
+        %p Designed by award-winning architecture firm Bentel & Bentel, our main dining room features custom-designed dark blue leather booths and banquettes referencing the bentwood style, as well as a wall made of reclaimed Wyoming snow fence post. North End Grill has an expansive street front, which allows for beautiful natural light and views of the Irish Hunger Memorial and the Hudson River. Dazzling black and white photographs from acclaimed photographer Mariana Cook are displayed throughout the restaurant, and a stunning open kitchen, seafood display area, and pastry station allow guests to observe the culinary activity.
+    .row#mezz
+      .col-md-4
+        %h3 Mezzanine
+        %p Lyon Hall is the perfect venue for a wide variety of events and gatherings. Whether it’s a celebration with friends at reserved tables in our lounge, or a refined private affair in our intimate mezzanine-level private room (seats 36), we collaborate with our guests to thoughtfully personalize each event. Please send us an email via the “contact” page on this website, or simply speak to a member of our team via telephone or in person.
+      .col-md-8
+        = image_tag('mezz_1.jpg', height:'400', width:'100%', class:'img-fluid')
+
+    .row#event_form
+      -# = form_for

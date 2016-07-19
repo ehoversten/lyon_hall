@@ -1,0 +1,25 @@
+.footer
+  .container
+    .row
+      .col-md-4#icon_wrapper
+        = link_to image_tag('lyon-hall-logo.png', height:'100', width:'100', class:'image-fluid'), root_path
+        = link_to image_tag('the-liberty-tavern.png', height:'100', width:'85', class:'img-fluid'), 'http://thelibertytavern.com/'
+        = link_to image_tag('home_northside_social.png', height:'85', width:'100', class:'img-fluid'), 'http://northsidesocialarlington.com/'
+      .col-md-4#address_wrapper
+        %h4 Lyon Hall
+        %p= link_to '3100 N. Washington Blvd, Arlington VA 22201', 'https://www.google.com/maps/place/Lyon+Hall/@38.8855879,-77.0955974,19z/data=!4m13!1m7!3m6!1s0x89b7b684409efa1b:0x1b94dca2f2b1f2b6!2s3100+Washington+Blvd,+Arlington,+VA+22201!3b1!8m2!3d38.8855921!4d-77.0949483!3m4!1s0x0:0xb47dbb1247ef7c7a!8m2!3d38.8853447!4d-77.09512'
+        %p (703)741-7636
+
+        -# %p Lyon Hall
+        -# %p 3100 N. Washington Blvd
+        -# %p Arlington, VA 22201
+        -# %p 703.741.7636
+
+      .col-md-4#social_wrapper
+        %ul
+          %a{:href => 'https://www.facebook.com/LyonHall'}
+            %i.fa.fa-facebook-square.fa-3x
+          %a{:href => 'https://www.instagram.com/lyonhall/?hl=en'}
+            %i.fa.fa-instagram.fa-3x
+          %a{:href => 'https://twitter.com/lyonhall'}
+            %i.fa.fa-twitter-square.fa-3x

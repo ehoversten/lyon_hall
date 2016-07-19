@@ -1,0 +1,22 @@
+.header
+  .container
+    .row
+      %nav.navbar.navbar-light.bg-faded
+        -# = image_tag 'lyonhall_logo.png', class:'navbar-brand'
+        -# %a.navbar-brand= image_tag 'lyonhall_logo.png' {:href => "#"}
+        = image_tag('lyonhall_logo.png', height:'150', width:'150', class:'navbar-brand img-fluid')
+        %ul.nav.navbar-nav
+          %li.nav-item
+            -# %a.nav-link{:href => "#"} Home
+            = link_to 'Home', root_path
+            %span.sr-only (current)
+          %li.nav-item
+            %a.nav-link{:href => "#"} Menu
+          %li.nav-item
+            %a.nav-link{:href => "#"} About
+          %li.nav-item
+            -# %a.nav-link{:href => "#"} Events
+            = link_to 'Events', events_path
+          %li.nav-item
+            %a.nav-link{:href => "#"} Contact
+            -# = link_to 'Contact', root_path
