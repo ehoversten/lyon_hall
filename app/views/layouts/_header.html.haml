@@ -5,13 +5,14 @@
         -# = image_tag 'lyonhall_logo.png', class:'navbar-brand'
         -# %a.navbar-brand= image_tag 'lyonhall_logo.png' {:href => "#"}
         = image_tag('lyonhall_logo.png', height:'150', width:'150', class:'navbar-brand img-fluid')
-        %ul.nav.navbar-nav
+        %ul.nav.navbar-nav.navbar-right
           %li.nav-item
             -# %a.nav-link{:href => "#"} Home
             = link_to 'Home', root_path
             %span.sr-only (current)
           %li.nav-item
-            %a.nav-link{:href => "#"} Menu
+            = link_to 'Menu', items_path
+            -# %a.nav-link{:href => "#"} Menu
           %li.nav-item
             %a.nav-link{:href => "#"} About
           %li.nav-item
@@ -20,3 +21,7 @@
           %li.nav-item
             -# %a.nav-link{:href => "#"} Contact
             = link_to 'Contact', contact_path
+
+  -# .container
+  -#   - flash.each do |item, msg|
+  -#     = content_tag :div, msg, class: "alert"

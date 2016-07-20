@@ -23,15 +23,14 @@
     .row#event_form
       -# = render '/pages/_form-event'
       %h2 Events Inquiry
-      .row
-        %col-md-6
-          %fieldset.form-group
-            %label{:for => "formGroupExampleInput"} First Name
-            %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}
-        %col-md-6
-          %fieldset.form-group
-            %label{:for => "formGroupExampleInput2"} Last Name
-            %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
+      %col-md-6
+        %fieldset.form-group
+          %label{:for => "formGroupExampleInput"} First Name
+          %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}
+      %col-md-6
+        %fieldset.form-group
+          %label{:for => "formGroupExampleInput2"} Last Name
+          %input#formGroupExampleInput2.form-control{:placeholder => "Another input", :type => "text"}
       %fieldset.form-group
         %label{:for => "formGroupExampleInput"} Email
         %input#formGroupExampleInput.form-control{:placeholder => "Example input", :type => "text"}

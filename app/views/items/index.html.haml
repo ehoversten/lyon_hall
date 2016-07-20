@@ -1,0 +1,15 @@
+#menu_item_index
+  .container
+    .row
+      %h1 Menu Item Index
+
+      - @item.each do |item|
+        .col-md-4
+          .recipe
+            .image_wrapper
+              = link_to item do
+                = image_tag item.image.url(:medium)
+            %h3= link_to item.title, item
+
+    .row#button
+      = link_to "New Item", new_item_path, class:"btn btn-primary"

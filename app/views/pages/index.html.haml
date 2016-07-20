@@ -122,37 +122,34 @@
 
 #events
   .container
-    %h1 Event Space
     .row
-      #carousel-example-generic.carousel.slide{"data-ride" => "carousel_2", "data-interval" => "3000"}
+      %h1 Event Space
+      #carousel-example-generic.carousel.slide{"data-ride" => "event_space", "data-interval" => "3000"}
         / Indicators
-        -# %ol.carousel-indicators
-        -#   %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
-        -#   %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
-        -#   %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#event_space"}
+          %li{"data-slide-to" => "1", "data-target" => "#event_space"}
+          %li{"data-slide-to" => "2", "data-target" => "#event_space"}
 
         / Wrapper for slides
         .carousel-inner
           .item.active
-            = image_tag('dining.jpg', height:'500', width:'100%', class:'img-fluid')
+            = image_tag('events_image_3.jpg', height:'400', width:'100%', class:'img-fluid')
             .carousel-caption
           .item
-            = image_tag('steak-frites.jpg', height:'500', width:'100%', class:'img-fluid')
+            = image_tag('font_patio.jpg', height:'400', width:'100%', class:'img-fluid')
             .carousel-caption
           .item
-            = image_tag('wine_glass.jpg', height:'500', width:'100%', class:'img-fluid')
+            = image_tag('dining_room.jpg', height:'400', width:'100%', class:'img-fluid')
             .carousel-caption
           .item
-            = image_tag('Beer-Flight.jpeg', height:'500', width:'100%', class:'img-fluid')
-            .carousel-caption
-          .item
-            = image_tag('beer.jpg', height:'500', width:'100%', class:'img-fluid')
+            = image_tag('mezz_1.jpg', height:'400', width:'100%', class:'img-fluid')
             .carousel-caption
 
         / Controls
-        %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#event_space", :role => "button"}
           %span.glyphicon.glyphicon-chevron-left
-        %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+        %a.right.carousel-control{"data-slide" => "next", :href => "#event_space", :role => "button"}
           %span.glyphicon.glyphicon-chevron-right
       / Carousel
 
