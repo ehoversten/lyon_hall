@@ -4,15 +4,33 @@
       .col-md-4
         = image_tag @item.image.url(:medium), class:'item_image'
       .col-md-8
-        %h4 Title:
-        %h4= @item.title
-        %p Price: $
-        %p= @item.price
-        %p Descriptions:
-        %p= @item.description
-        %p Allergies:
-        %p= @item.allergy
+        #item_info
+          %h4 Title:
+          %h4= @item.title
+          %p Price: $
+          %p= @item.price
+          %p Descriptions:
+          %p= @item.description
+          %p Allergies:
+          %p= @item.allergy
 
-      = link_to "Back", items_path, class:"btn btn-default"
-      = link_to "Edit", edit_item_path, class:"btn btn-primary"
-      = link_to "Delete Item", items_path, method: :delete, data: { confirm: "Are you sure?"}, class:"btn btn-default"
+    .row
+      .col-md-6
+        #ingredients
+          %h2 Ingredients
+          %ul
+            - @item.ingredients.each do |ingredient|
+              %li= ingredient.name
+
+      .col-md-6
+        #directions
+          %h2 Allergies
+          %ul
+            - @item.allergies.each do |allergy|
+              %li= allergy.restriction
+
+    .row
+      .col-md-12
+        = link_to "Back", items_path, class:"btn btn-default"
+        = link_to "Edit", edit_item_path, class:"btn btn-primary"
+        = link_to "Delete Item", items_path, method: :delete, data: { confirm: "Are you sure?"}, class:"btn btn-default"

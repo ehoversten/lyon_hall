@@ -12,7 +12,24 @@
       = f.input :title, label: 'Title: ', input_html: { class: 'form-control'}
       = f.input :price, label: 'Price: ', input_html: { class: 'form-control'}
       = f.input :description, label: 'Description: ', input_html: { class: 'form-control'}
-      = f.input :allergy, label: 'Allergies: ', input_html: { class: 'form-control'}
-      = f.input :image, label: 'Allergies: ', input_html: { class: 'form-control'}
+      -# = f.input :allergy, label: 'Allergies: ', input_html: { class: 'form-control'}
+      = f.input :image, label: 'Image: ', input_html: { class: 'form-control'}
+
+    .row
+      .col-md-6
+        %h3 Ingredients
+        #ingredients
+          = f.simple_fields_for :ingredients do |ingredient|
+            = render 'ingredient_fields', f: ingredient
+          .links
+            = link_to_add_association 'Add Ingredient', f, :ingredients, class: "btn btn-default add-button"
+
+      .col-md-6
+        %h3 Allergies
+        #directions
+          = f.simple_fields_for :allergies do |allergy|
+            = render 'allergy_fields', f: allergy
+          .links
+            = link_to_add_association 'Add Restriction', f, :allergies, class: "btn btn-default add-button"
 
     = f.button :submit, class: "btn btn-primary"

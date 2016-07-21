@@ -8,11 +8,26 @@
         float: right
 
 #menu_show_item
+  background: #ddd
   .container
     .row
       margin: 20px 50px
+      #item_info, #ingredients, #directions
+        background: white
+        // @include box-shadow
+        min-height: 360px
+        border-radius: 5px
+        padding: 2em 8%
+        margin-bottom: 50px
+        ul, ol
+          padding-left: 18px
+        li
+          padding: 1em 0
+          border-bottom: 1px solid #EAEAEA
+      #item_info
+        min-height: 250px
       .item_image
-        height: 300px
+        height: 325px
         // max-width: 100%
         border-radius: 5px
         border: 2px solid #000
